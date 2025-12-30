@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Página principal -->
+  <url>
+    <loc>https://darwinyanmila.github.io/stringo/</loc>
+  </url>
+
+  <!-- Páginas principales -->
+  <url>
+    <loc>https://darwinyanmila.github.io/stringo/about.html</loc>
+  </url>
+  <url>
+    <loc>https://darwinyanmila.github.io/stringo/acordes-basicos.html</loc>
+  </url>
+  <url>
+    <loc>https://darwinyanmila.github.io/stringo/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://darwinyanmila.github.io/stringo/historia.html</loc>
+  </url>
+  <url>
+    <loc>https://darwinyanmila.github.io/stringo/partes-guitarra.html</loc>
+  </url>
+
+  <!-- Páginas de notas por cuerda -->
+  <url>
+    <loc>https://darwinyanmila.github.io/stringo/notas/primera-cuerda.html</loc>
+  </url>
+  <url>
+    <loc>https://darwinyanmila.github.io/stringo/notas/segunda-cuerda.html</loc>
+  </url>
+  <url>
+    <loc>https://darwinyanmila.github.io/stringo/notas/tercera-cuerda.html</loc>
+  </url>
+  <url>
+    <loc>https://darwinyanmila.github.io/stringo/notas/cuarta-cuerda.html</loc>
+  </url>
+  <url>
+    <loc>https://darwinyanmila.github.io/stringo/notas/quinta-cuerda.html</loc>
+  </url>
+  <url>
+    <loc>https://darwinyanmila.github.io/stringo/notas/sexta-cuerda.html</loc>
+  </url>
+
+</urlset>
