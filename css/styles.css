@@ -1,0 +1,254 @@
+/* =========================
+   RESET BÁSICO
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =========================
+   HEADER CON LOGO STRINGO
+========================= */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #111;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container img {
+  width: 60px;
+  height: auto;
+  display: block;
+}
+
+.logo-container h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color: #FFD700; /* dorado del logo */
+  margin: 0;
+}
+
+/* =========================
+   NAV
+========================= */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+nav a {
+  color: #007BFF; /* azul moderno */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   TIP-BOX
+========================= */
+.tip-box {
+  background: #e3f2fd;
+  border-left: 5px solid #007BFF;
+  padding: 15px;
+  margin-top: 25px;
+  border-radius: 8px;
+}
+
+/* =========================
+   STRING LABEL
+========================= */
+.string-label {
+  background: #FFD700;
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+/* =========================
+   FRETBOARD
+========================= */
+.fretboard {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.fret {
+  background: #222;
+  color: #fff;
+  padding: 12px 5px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.fret span {
+  display: block;
+  font-size: 0.75rem;
+  color: #FFD700;
+  margin-top: 4px;
+}
+
+/* =========================
+   HISTORY CARDS
+========================= */
+.history-card {
+  display: flex;
+  flex-direction: column;
+  background: #f1f1f1;
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.history-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.history-text {
+  padding: 20px;
+}
+
+.history-text h2 {
+  margin-top: 0;
+}
+
+.history-text span {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+/* =========================
+   STRING MENU
+========================= */
+.string-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.string-menu a {
+  display: block;
+  padding: 15px;
+  background: #eee;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: #111;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.string-menu a:hover {
+  background: #007BFF;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   IMAGENES
+========================= */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+  header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .logo-container {
+      margin-bottom: 10px;
+  }
+
+  .logo-container h1 {
+      font-size: 24px;
+      text-align: center;
+  }
+
+  nav {
+      justify-content: center;
+  }
+
+  .fretboard {
+      grid-template-columns: repeat(4, 1fr);
+  }
+
+  .string-menu {
+      grid-template-columns: 1fr;
+  }
+
+  .tip-box {
+      font-size: 0.9rem;
+  }
+}
